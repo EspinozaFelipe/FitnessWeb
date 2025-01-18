@@ -25,7 +25,7 @@ const services: Service[] = [
     icon: "dumbbellicon",
     href: "/strength-training",
   },
-  { name: "Diet", icon: "foodbowlicon", href: "/diet" },
+  { name: "Diet", icon: "foodbowlicon", href: "/diet-coaches" },
   { name: "Weight Loss", icon: "rulericon", href: "/weight-loss" },
   { name: "Yoga", icon: "yogaicon", href: "/yoga" },
 ];
@@ -39,7 +39,7 @@ function SelectService() {
           <li key={service.name}>
             <Link href={service.href}>
               <Card variant="outlined" className="rounded-xl">
-                <CardContent className="flex items-center space-x-2 hover:bg-slate-700 hover:text-white transition duration-700">
+                <CardContent className="flex items-center space-x-2 hover:bg-slate-700 hover:text-white transition duration-7">
                   <IconComponent size={24} />
                   <div>{service.name}</div>
                 </CardContent>
